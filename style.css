@@ -1,0 +1,50 @@
+.container-fluid{
+    background-color: #C4941D;
+    height: 70px;
+    margin: 0;
+  
+}
+.navbar-collapse{
+    background-color: #EDEDCF;
+}
+.icon-link{
+    background-color: #C4941D;
+    margin-top: 40px;
+    padding: 5px;
+    text-decoration: none;
+    border-radius: 10px;
+}
+
+
+/* Specific overrides for Bootstrap classes */
+.container, .container-fluid, .navbar, .navbar-collapse, .navbar-nav {
+    padding: 0 !important;
+}
+
+.topback{
+    background-image: url('topback.jpg');
+    background-repeat: repeat;
+    text-align: center;
+    height: 95vh;
+  
+}
+.logo{
+    border-radius: 100px;
+    margin-top: 205px;
+    margin-bottom: 205px;
+    height: 450px;
+    width: 450px;
+}
+.slideimage{
+    height: 500px;
+    width: 100%;
+    border-radius: 20px;
+
+}
+
+
+  .custom-gap > .col,
+  .custom-gap > [class*="col-"] {
+    padding-right: 30px;
+    padding-left: 30px;
+  }
