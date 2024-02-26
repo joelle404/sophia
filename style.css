@@ -14,7 +14,11 @@
     text-decoration: none;
     border-radius: 10px;
 }
-
+.collapse , .navbar-toggler{
+    margin: 10px;
+    border-radius: 10px;
+    
+}
 
 /* Specific overrides for Bootstrap classes */
 .container, .container-fluid, .navbar, .navbar-collapse, .navbar-nav {
@@ -25,8 +29,10 @@
     background-image: url('topback.jpg');
     background-repeat: repeat;
     text-align: center;
-    height: 95vh;
-  
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Adjust the height as needed */
 }
 .logo{
     border-radius: 100px;
@@ -42,7 +48,10 @@
 
 }
 
-
+.logo{
+    max-width: 100%;
+    height: auto;
+}
   .custom-gap > .col,
   .custom-gap > [class*="col-"] {
     padding-right: 30px;
