@@ -2,10 +2,16 @@
 let cquantity = 0;
 let hquantity = 0;
 let totall = 0;
+<<<<<<< HEAD
 
 // Get the previous quantities from localStorage
 let previousCQuantity = localStorage.getItem("cquantity");
 let previousHQuantity = localStorage.getItem("hquantity");
+=======
+let previousCQuantity = localStorage.getItem("cquantity");
+let previousHQuantity = localStorage.getItem("hquantity");
+
+>>>>>>> a146dcf8ca84e5d47d157b10471a8773a2710667
 if (previousCQuantity) {
     cquantity = parseInt(previousCQuantity);
 }
@@ -54,7 +60,6 @@ function addToCart(product, quantity) {
     alert('Added ' + quantity + ' item(s) of ' + product + ' to the cart.');
 }
 
-// Add to cart functions for each product
 function caddToCart() {
     addToCart('honey comb', cquantity);
 }
@@ -95,7 +100,11 @@ function calculateTotal() {
     let combPrice = 100;
 
     let totalPrice = hquantity * honeyPrice + cquantity * combPrice;
+<<<<<<< HEAD
     totall = totall + totalPrice; // Add the previous total to the current total
+=======
+    totall = totall + totalPrice; 
+>>>>>>> a146dcf8ca84e5d47d157b10471a8773a2710667
     document.getElementById('total').innerText = totall;
     localStorage.setItem("mytime", totall);
 }
