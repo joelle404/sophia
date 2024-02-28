@@ -2,16 +2,11 @@
 let cquantity = 0;
 let hquantity = 0;
 let totall = 0;
-<<<<<<< HEAD
 
-// Get the previous quantities from localStorage
-let previousCQuantity = localStorage.getItem("cquantity");
-let previousHQuantity = localStorage.getItem("hquantity");
-=======
+
 let previousCQuantity = localStorage.getItem("cquantity");
 let previousHQuantity = localStorage.getItem("hquantity");
 
->>>>>>> a146dcf8ca84e5d47d157b10471a8773a2710667
 if (previousCQuantity) {
     cquantity = parseInt(previousCQuantity);
 }
