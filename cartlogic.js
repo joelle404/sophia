@@ -1,13 +1,23 @@
 // Initialize quantities
 let cquantity = 0;
 let hquantity = 0;
+let totall = 0;
+let previousCQuantity = localStorage.getItem("cquantity");
+let previousHQuantity = localStorage.getItem("hquantity");
+
+if (previousCQuantity) {
+    cquantity = parseInt(previousCQuantity);
+}
+if (previousHQuantity) {
+    hquantity = parseInt(previousHQuantity);
+}
 
 // Increment and decrement functions for each product
 function cincrement() {
     cquantity++;
     document.getElementById('quantity').innerText = cquantity;
     fillQuantities();
-    total();
+    calculateTotal();
 }
 
 function cdecrement() {
@@ -16,14 +26,14 @@ function cdecrement() {
         document.getElementById('quantity').innerText = cquantity;
     }
     fillQuantities();
-    total();
+    calculateTotal();
 }
 
 function hincrement() {
     hquantity++;
     document.getElementById('quantity').innerText = hquantity;
     fillQuantities();
-    total();
+    calculateTotal();
 }
 
 function hdecrement() {
@@ -32,7 +42,7 @@ function hdecrement() {
         document.getElementById('quantity').innerText = hquantity;
     }
     fillQuantities();
-    total();
+    calculateTotal();
 }
 
 // Add to cart function
@@ -43,7 +53,6 @@ function addToCart(product, quantity) {
     alert('Added ' + quantity + ' item(s) of ' + product + ' to the cart.');
 }
 
-// Add to cart functions for each product
 function caddToCart() {
     addToCart('honey comb', cquantity);
 }
@@ -52,10 +61,6 @@ function haddToCart() {
     addToCart('honey', hquantity);
 }
 
-
-
-
-
 function incrementQuantity(product) {
     if (product === 'honey') {
         hquantity++;
@@ -63,7 +68,7 @@ function incrementQuantity(product) {
         cquantity++;
     }
     fillQuantities();
-    total();
+    calculateTotal();
 }
 
 function decrementQuantity(product) {
@@ -73,22 +78,27 @@ function decrementQuantity(product) {
         cquantity--;
     }
     fillQuantities();
-    total();
+    calculateTotal();
 }
 
 function fillQuantities() {
     document.getElementById('honey').innerText = hquantity;
     document.getElementById('comb').innerText = cquantity;
+    localStorage.setItem("cquantity", cquantity);
+    localStorage.setItem("hquantity", hquantity);
 }
 
-function total() {
+function calculateTotal() {
     let honeyPrice = 120;
     let combPrice = 100;
+
     let totalPrice = hquantity * honeyPrice + cquantity * combPrice;
-    document.getElementById('total').innerText = totalPrice;
+    totall = totall + totalPrice; 
+    document.getElementById('total').innerText = totall;
+    localStorage.setItem("mytime", totall);
 }
 
-  window.onload = function() {
-            fillQuantities();
-            total();
-        };
+window.onload = function() {
+    fillQuantities();
+    calculateTotal();
+};
