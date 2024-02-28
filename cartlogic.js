@@ -100,11 +100,8 @@ function calculateTotal() {
     let combPrice = 100;
 
     let totalPrice = hquantity * honeyPrice + cquantity * combPrice;
-<<<<<<< HEAD
-    totall = totall + totalPrice; // Add the previous total to the current total
-=======
+
     totall = totall + totalPrice; 
->>>>>>> a146dcf8ca84e5d47d157b10471a8773a2710667
     document.getElementById('total').innerText = totall;
     localStorage.setItem("mytime", totall);
 }
