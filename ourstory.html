@@ -29,7 +29,7 @@ body{
 text-align: center;
 }
 .im{
-  height: 20%;
+  height: 70%;
   width: 20%;
   border-radius: 10px;
   box-shadow: 5px 5px 15px rgba(0, 0, 0, 1.5);
@@ -73,8 +73,14 @@ text-align: center;
     .im {
         margin-top: 50px; /* Adjust as needed */
         height: auto;
-
+        height: 40%;
+  width: 20%;
     }
+    .s{
+  border-radius: 10px; 
+  box-shadow: 5px 5px 15px rgba(0, 0, 0, 1.5);
+  height: 200px;
+}
 }
 
 
@@ -85,26 +91,30 @@ text-align: center;
   </head>
 <body>
     
-    <nav class="navbar navbar-expand-lg bg-body-tertiary sticky-top">
-        <div class="container-fluid">
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+  <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top">
+    <div class="container">
+        <a class="navbar-brand" href="#">Sophia</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
+            aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-            <div class="navbar-nav">
-              <a class="nav-link " aria-current="page" href="index.html">Home</a>
-              <a class="nav-link active" href="ourstory.html">our story</a>
-              <a class="nav-link" href="cart.html">your cart</a>
-
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="navbar-nav ml-auto">
+                <a class="nav-item nav-link" href="index.html">Home</a>
+                <a class="nav-item nav-link active" href="ourstory.html">Our Story</a>
+                <a class="nav-item nav-link" href="cart.html">My Cart</a>
             </div>
-          </div>
         </div>
-      </nav>
+    </div>
+</nav>
 
-      <div class="green">
+<div class="green">
+    <div class="container">
         <h1>Our Story</h1>
         <img class="im" src="honey1.jpg" alt="">
     </div>
+</div>
+
     <div class="row col-sm-8 mt-5">
         <div class="story-content pp">
             <h3>A Childhood Fascination</h3>
@@ -142,6 +152,9 @@ text-align: center;
         </div>
       </div>
  
-
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  
 </body>
 </html>
