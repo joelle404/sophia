@@ -1,99 +1,135 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sophia</title>
-    <link rel="stylesheet" type="text/css" href="style.css">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sophia</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
 
-<style>
+    <style>
+        body {
+            background-image: url('topback.jpg');
+            background-repeat: repeat;
+            margin-bottom: 20px;
+            font-family: Arial, sans-serif;
+            color: #333;
+        }
 
-.add {
-          background-color: rgba(245, 245, 220, 0.575);
-          border-radius: 10px;
-          width: fit-content;
-          padding: 20px;
-          margin-left: 20px;
-      }
-.green {
-    display: flex;
-    align-items: center;
-}
+        .navbar {
+            background-color: #C4941D;
+            border-radius: 10px;
+        }
 
-.im {
-    border-radius: 20px;
-    height: 400px;
-    width: 400px;
-}
+        .green {
+            background-color: rgba(245, 245, 220, 0.575);
+            border-radius: 10px;
+            padding: 20px;
+            margin: 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+        }
 
-div {
-    padding: 20px;
-}
+        .green h2 {
+            margin-bottom: 10px;
+        }
 
-p{
-  color: black !important;
- }
- h3 , h2{
-  color: #172002e3;
- }
+        .im {
+            border-radius: 20px;
+            height: 400px;
+            width: 400px;
+        }
 
-body {
-    background-image: url(topback.jpg);
-    margin-bottom: 20px;
-}
+        .pepe {
+            background-color: #86613f57;
+            border-radius: 10px;
+            padding: 20px;
+            margin: 20px;
+        }
 
-.pepe {
-    background-color: #86613f57;
-    border-radius: 10px;
-    padding: 10px;
-}
-button{
-        border-radius: 6px;
-      }
-</style>
-  </head>
+        .pepe h3 {
+            color: #172002e3;
+            margin-bottom: 10px;
+        }
+
+        .pepe p {
+            color: black !important;
+        }
+
+        .custom-button {
+            border-radius: 6px;
+            background-color: #3f570d; /* Green color */
+            color: white;
+            border: none;
+            padding: 10px 20px;
+        }
+
+        .custom-button:hover {
+            background-color: #2d3d06; /* Darker green color on hover */
+        }
+
+    </style>
+</head>
+
 <body>
-    
-  <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top">
-    <div class="container">
-      <a class="navbar-brand" href="index.html">Sophia</a>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
-            aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-            <div class="navbar-nav ml-auto">
-                <a class="nav-item nav-link" href="index.html">Home</a>
-                <a class="nav-item nav-link " href="ourstory.html">Our Story</a>
-                <a class="nav-item nav-link " href="cart.html">My Cart</a>
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">Sophia</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
+                aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <div class="navbar-nav ml-auto">
+                    <a class="nav-item nav-link" href="index.html">Home</a>
+                    <a class="nav-item nav-link" href="ourstory.html">Our Story</a>
+                    <a class="nav-item nav-link" href="cart.html">My Cart</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <div class="green">
+        <img class="im mb-3" src="comb2.jpg" alt="">
+        <div class="add">
+            <h2>Honey Comb</h2>
+            <h4>100₪/kg</h4>
+            <div class="cart">
+                <a href="cart.html" class="custom-button">Go to Cart
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                        class="bi bi-cart3" viewBox="0 0 16 16">
+                        <path
+                            d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .49.598l-1 5a.5.5 0 0 1-.465.401l-9.397.472L4.415 11H13a.5.5 0 0 1 0 1H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM3.102 4l.84 4.479 9.144-.459L13.89 4H3.102zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2z" />
+                    </svg>
+                </a>
             </div>
         </div>
     </div>
-</nav>
 
-      <div class="green d-flex flex-column flex-md-row align-items-center">
-        <img class="im mb-3 mb-md-0 me-md-3" src="comb2.jpg" alt="">
-        <div class="add">
-          <h2>Honey Comb</h2>
-          <h4>100₪/kg</h4>
-          <div class="cart">
-            <a href="cart.html" class="cart-icon">
-              <svg style="color: rgb(0, 0, 0);" xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="currentColor" class="bi bi-cart3" viewBox="0 0 16 16"> <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .49.598l-1 5a.5.5 0 0 1-.465.401l-9.397.472L4.415 11H13a.5.5 0 0 1 0 1H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM3.102 4l.84 4.479 9.144-.459L13.89 4H3.102zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2z" fill="#000000"></path> </svg>        
-            </a>
-          </div>
-        </div>
-      </div>
-      
- <div class="pepe">
-    <h3>More Details</h3>
-    <p >Honeycomb, the waxy structure created by bees to store honey, also offers a range of benefits for both health and culinary purposes. This natural marvel is rich in antioxidants, aiding in the fight against oxidative stress and supporting immune function. Its unique composition, including natural beeswax and propolis, provides antibacterial and antiviral properties, making it beneficial for wound healing and soothing respiratory issues. The hexagonal cells of the honeycomb store honey with minimal moisture, creating an environment that inhibits bacterial growth and extends the shelf life of the honey. Consuming honeycomb may also offer a sustained energy release due to its blend of natural sugars, offering a healthier alternative to refined sugars. Additionally, honeycomb is a delightful addition to cheese plates, salads, and desserts, adding both flavor and texture. Its natural sweetness and health benefits make honeycomb a versatile and wholesome ingredient, offering a taste of nature's goodness.</p>
- </div>
- <script src="cartlogic.js"></script>
+    <div class="pepe">
+        <h3>More Details</h3>
+        <p>Honeycomb, the waxy structure created by bees to store honey, also offers a range of benefits for both
+            health and culinary purposes. This natural marvel is rich in antioxidants, aiding in the fight against
+            oxidative stress and supporting immune function. Its unique composition, including natural beeswax and
+            propolis, provides antibacterial and antiviral properties, making it beneficial for wound healing and
+            soothing respiratory issues. The hexagonal cells of the honeycomb store honey with minimal moisture,
+            creating an environment that inhibits bacterial growth and extends the shelf life of the honey. Consuming
+            honeycomb may also offer a sustained energy release due to its blend of natural sugars, offering a
+            healthier alternative to refined sugars. Additionally, honeycomb is a delightful addition to cheese plates,
+            salads, and desserts, adding both flavor and texture. Its natural sweetness and health benefits make
+            honeycomb a versatile and wholesome ingredient, offering a taste of nature's goodness.</p>
+    </div>
+
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 
 </body>
+
 </html>
