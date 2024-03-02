@@ -9,80 +9,51 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
 
 <style>
-.row{
-  margin: 20px;
+body {
+  background-color: #f8f9fa;
 }
- p{
-  color: black !important;
- }
- h3  ,  h1{
-  color: #172002;
- }
-body{
-  background-image: url(topback.jpg);
-  margin-bottom: 20px;
+
+.navbar {
+  background-color: #fff;
 }
-.green{
-  padding-top: 10px;
+
+.green {
   background-color: #3f570d81;
-  height: 400px;
-text-align: center;
+  text-align: center;
+  padding: 20px 0;
 }
-.im{
-  height: 70%;
+
+.image-container {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+}
+
+.im {
   width: 20%;
   border-radius: 10px;
-  box-shadow: 5px 5px 15px rgba(0, 0, 0, 1.5);
+  box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.5);
 }
 
-.pp{
-  background-color: #86613f57;
+.story-content {
+  background-color: #f8f9fa;
+  padding: 20px;
+  margin-top: 20px;
   border-radius: 10px;
-
+  box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.5);
 }
 
-
-
-
-
-.s{
-  border-radius: 10px; 
-  box-shadow: 5px 5px 15px rgba(0, 0, 0, 1.5);
-  height: 300px;
-}
-.ss{
-  border-radius: 10px; 
-  box-shadow: 5px 5px 15px rgba(0, 0, 0, 1.5);
-  height: 300px;
-  margin-right: 20px;
+@media screen and (max-width: 768px) {
+  .im {
+    width: 40%;
+  }
 }
 
-@media screen and (max-width: 1800px) {
-    .green {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        text-align: center;
-    }
-    .image-container {
-        display: flex;
-        justify-content: center;
-        margin-top: 20px; /* Adjust as needed */
-    }
-    .im {
-        margin-top: 50px; /* Adjust as needed */
-        height: auto;
-        height: 40%;
-  width: 20%;
-    }
-    .s{
-  border-radius: 10px; 
-  box-shadow: 5px 5px 15px rgba(0, 0, 0, 1.5);
-  height: 200px;
+@media screen and (max-width: 576px) {
+  .im {
+    width: 60%;
+  }
 }
-}
-
 
 
 
@@ -109,48 +80,43 @@ text-align: center;
 </nav>
 
 <div class="green">
-    <div class="container">
-        <h1>Our Story</h1>
-        <img class="im" src="honey1.jpg" alt="">
+  <div class="container">
+    <h1>Our Story</h1>
+    <div class="image-container">
+      <img class="im" src="honey1.jpg" alt="">
     </div>
+  </div>
 </div>
 
-    <div class="row col-sm-8 mt-5">
-        <div class="story-content pp">
-            <h3>A Childhood Fascination</h3>
-            <p>My journey with beekeeping began in the comfort of my childhood home, where I watched my parents tenderly care for our family's bees. This early exposure ignited a deep affection within me, not just for the bees, but for the exquisite, natural honey they produced. Witnessing their dedication, I fell in love with the entire process.</p>
-        </div>
+<div class="container mt-5">
+  <div class="row">
+    <div class="col-md-8 offset-md-2 story-content">
+      <h3>A Childhood Fascination</h3>
+      <p>My journey with beekeeping began in the comfort of my childhood home, where I watched my parents tenderly care for our family's bees. This early exposure ignited a deep affection within me, not just for the bees, but for the exquisite, natural honey they produced. Witnessing their dedication, I fell in love with the entire process.</p>
     </div>
-  
-      <div class="row">
-        
-       <div class="col-sm-9 pp" >
-                     <h3>The Lost Tradition</h3>
-<p>As time marched on, the demands of life made it increasingly difficult for my parents to sustain our beekeeping practices. We went years without tasting our own honey, and during this hiatus, I developed a distaste for the commercial honey available in stores. The additives and lack of purity couldn't compare to the natural sweetness I had grown accustomed to.</p>
-<h3>Embracing the Legacy</h3>
-<p>Determined to reconnect with this lost art, I took a decisive step on my 18th birthday. My parents, understanding my passion, gifted me a small bee colony. This gesture was more than just a gift; it was the passing of a torch, an invitation to embrace the challenges and rewards of beekeeping.</p>
-<h3>The Learning Curve</h3>
-<p>Embarking on this venture was no small feat. The initial years were fraught with challenges, from understanding the complex behaviors of bees to managing the hives. Mistakes were made, and, regrettably, some bees were lost. Yet, each setback served as a valuable lesson, strengthening my resolve and deepening my understanding of beekeeping.</p>
+  </div>
 
-      </div>
-      <div class="col-sm-3" >
-        <img class="s" src="comb1.jpg" alt="">
+  <div class="row mt-4">
+    <div class="col-md-6 story-content">
+      <h3>The Lost Tradition</h3>
+      <p>As time marched on, the demands of life made it increasingly difficult for my parents to sustain our beekeeping practices. We went years without tasting our own honey, and during this hiatus, I developed a distaste for the commercial honey available in stores. The additives and lack of purity couldn't compare to the natural sweetness I had grown accustomed to.</p>
+    </div>
+    <div class="col-md-6">
+      <img class="im mt-4" src="comb1.jpg" alt="">
+    </div>
+  </div>
 
-    </div> 
-      </div>
-      <div class="row">
-        <div class="col-sm-2" >
-                  <img class="ss" src="honey3.jpg" alt="">
+  <div class="row mt-4">
+    <div class="col-md-6">
+      <img class="im mt-4" src="honey3.jpg" alt="">
+    </div>
+    <div class="col-md-6 story-content">
+      <h3>Growth and Expansion</h3>
+      <p>With time and perseverance, I learned to better cater to the needs of my bees, aiding them in hive building and ensuring their prosperity. Year by year, our apiary grew, reflecting not just the expansion of the colonies, but also my growth as a beekeeper.</p>
+    </div>
+  </div>
+</div>
 
-        </div>
-        <div class="col-sm-8 pp" >
-         <h3>Growth and Expansion</h3>
-<p>With time and perseverance, I learned to better cater to the needs of my bees, aiding them in hive building and ensuring their prosperity. Year by year, our apiary grew, reflecting not just the expansion of the colonies, but also my growth as a beekeeper.</p>
-<h3>A Journey of Discovery</h3>
-<p>Today, my adventure in beekeeping continues to evolve. It's a path marked by continuous learning, occasional setbacks, and the joy of witnessing the thriving life of the bees. My commitment to producing pure, natural honey remains unwavering, as does my passion for sharing the beauty of beekeeping with others.</p>
-
-        </div>
-      </div>
  
       <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
       <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
