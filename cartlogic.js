@@ -14,39 +14,6 @@ if (previousHQuantity) {
     hquantity = parseInt(previousHQuantity);
 }
 
-// Increment and decrement functions for each product
-function cincrement() {
-    cquantity++;
-    document.getElementById('quantity').innerText = cquantity;
-    fillQuantities();
-    calculateTotal();
-}
-
-function cdecrement() {
-    if (cquantity > 0) {
-        cquantity--;
-        document.getElementById('quantity').innerText = cquantity;
-    }
-    fillQuantities();
-    calculateTotal();
-}
-
-function hincrement() {
-    hquantity++;
-    document.getElementById('quantity').innerText = hquantity;
-    fillQuantities();
-    calculateTotal();
-}
-
-function hdecrement() {
-    if (hquantity > 0) {
-        hquantity--;
-        document.getElementById('quantity').innerText = hquantity;
-    }
-    fillQuantities();
-    calculateTotal();
-}
-
 // Add to cart function
 function addToCart(product, quantity) {
     let cart = JSON.parse(localStorage.getItem('cart')) || {};
