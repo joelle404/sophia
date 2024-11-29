@@ -58,12 +58,13 @@ function fillQuantities() {
 }
 
 function calculateTotal() {
-    let honeyPrice = 120;
-    let combPrice = 100;
+    let honeyPrice = 150;
+    let combPrice = 180;
 
     let totalPrice = hquantity * honeyPrice + cquantity * combPrice;
 
-    totall = totall + totalPrice; 
+    totall = totalPrice;
+
     document.getElementById('total').innerText = totall;
     localStorage.setItem("mytime", totall);
 }
